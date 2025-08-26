@@ -20,5 +20,10 @@ function calculateAge() {
         months += 12;
     }
 
+    if(years < 0){
+        document.getElementById("result").innerText = "Invalid Date of Birth";
+        return;
+    }
+
     document.getElementById("result").innerText = `Your age is ${years} years, ${months} months, and ${days} days.`;
 }
